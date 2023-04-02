@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Time Converter and Stopwatch</title>
+    <link rel="stylesheet" href="mystyle.css">
+  </head>
+  <body>
+    <div class="container">
+      <h1>Time Converter and Stopwatch</h1>
+
+      <!-- Time Converter -->
+      <div class="time-converter">
+        <h2>Time Converter</h2>
+        <input type="number" id="hours" placeholder="Hours">
+        <input type="number" id="minutes" placeholder="Minutes">
+        <input type="number" id="seconds" placeholder="Seconds">
+        <button onclick="convertTime()">Convert</button>
+        <p id="result"></p>
+      </div>
+<hr>
+      <!-- Stopwatch -->
+      <div class="stopwatch">
+        <h2>Stopwatch</h2>
+        <p id="stopwatch-display">00:00:00</p>
+        <button id="start-button" onclick="startStopwatch()">Start</button>
+        <button id="stop-button" onclick="stopStopwatch()">Stop</button>
+        <button id="reset-button" onclick="resetStopwatch()">Reset</button>
+      </div>
+
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
+
